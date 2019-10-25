@@ -1,0 +1,81 @@
+@import '../../../assets/scss/utility/utility.scss';
+
+.home{
+   background: url('../../../assets/image/parallax-bg-3.jpg');
+   background-size: cover;
+   background-attachment: fixed;
+   height: 100%;
+   .gallery{
+      margin-top: 10px;
+   }
+   .brand{
+      margin-top: 150px;
+      width: 100%;
+      margin-left: 0;
+      padding-top: 30px;
+      padding-bottom: 180px;
+      @media screen and(max-width : 568px) {
+             
+      }
+      background: url('../../../assets/image/33453.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    
+      .header{
+         h2{ color: lighten($color-dark ,30);}
+        
+      }
+      .brand-box{
+         margin-top: 90px;
+         .boxes{
+         //   background-color: black;
+          
+            box-sizing: border-box;
+            height: 280px;
+            overflow: hidden;
+            padding: 10px;
+            .sub-box{
+               box-sizing: border-box;
+               //  background-color: red;
+               height: 260px;
+               padding-left: 67px;
+               padding-top: 20px;
+               overflow: hidden;
+               transition: ease-in-out .4s;
+               &:hover{transform: scale(1.1);}
+               @media only screen and(max-width:568px){
+                  padding-left: 28px;
+               }
+            }
+         }
+      }
+   }
+      .category{
+         // margin-top: 150px;
+         width: 100%;
+         margin-left: 0;
+         padding-top: 250px;
+         padding-bottom: 250px;
+         @media screen and(max-width : 568px) {
+                 
+         }
+         background-color: rgba(246, 246, 246, 0.521);
+         background-size: cover;
+         background-position: center;
+         background-attachment: fixed;
+       
+         .category-box{
+            
+            .boxes{
+              
+               background-color: rgb(67, 67, 128);
+               box-sizing: border-box;
+               padding: 10% 20%;
+               overflow: hidden;
+            }
+         }
+         
+   }
+   
+}

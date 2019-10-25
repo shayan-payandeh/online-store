@@ -1,0 +1,28 @@
+<!-- <section class="cart">
+    <div class="header">
+        <div class="date">{{data.Date}}</div>
+        <div class="information">
+            <div class="view"><i></i><span>{{data.ViewCount}}</span></div>
+            <div class="space-10"></div>
+            <div class="like"><i></i><span>{{data.LikeCount}}</span></div>
+        </div>
+    </div>
+    <div class="image">
+        <a [routerLink] = "['/list',data.Id]"><img src="{{data.Image}}"></a>
+    </div>
+    <div class="text">
+        <div class="title">{{data.Title}}</div>
+        <div class="description">{{data.Description}}</div>
+    </div>
+</section> -->
+
+<section class="cart">
+    <div class="card">
+        <a [routerLink] = "['/list',data.Id]"><img src="{{data.Image}}" class="card-img" ></a>
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the </p>
+            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+        </div>
+    </div>
+</section>

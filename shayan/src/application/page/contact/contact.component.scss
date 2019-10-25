@@ -1,0 +1,21 @@
+@import '../../../assets/scss/utility/bootstrap.scss';
+
+.contact{
+    padding: 30px;
+    
+    .form{
+        
+        font-size: 20px ;
+        color: rgb(26, 44, 78);
+        .form-group{
+            
+            .form-control{
+                background-color: rgb(246, 253, 255);
+                border: 1.5px rgb(191, 202, 235) solid;
+            }
+            .form-control.ng-touched.ng-invalid{
+                border-color: red;;
+            }
+        }
+    }
+}

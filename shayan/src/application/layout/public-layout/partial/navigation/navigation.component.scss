@@ -1,0 +1,74 @@
+@import '../../../../../assets/scss/utility/utility.scss';
+
+.toggle{
+    display: none;
+    cursor: pointer;
+    position: relative;
+    height: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    background-image: linear-gradient(to left,
+                                     lighten($color-blue,25),
+                                     lighten($color-blue,37), 
+                                     lighten($color-blue,25),
+                                     lighten($color-blue,37),
+                                     lighten($color-blue,25),
+                                     lighten($color-blue,37),
+                                     lighten($color-blue,25),
+                                     ) ;
+    .bar-icon{
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top:10px ;
+        margin-right: 20px;
+    }
+    @media only screen and (max-width:568px){
+        display: block;
+    
+    }
+}
+.nav{
+    
+    @extend %shadow;
+    background-image: linear-gradient(to left,
+                                     lighten($color-blue,25),
+                                     lighten($color-blue,37), 
+                                     lighten($color-blue,25),
+                                     lighten($color-blue,37),
+                                     lighten($color-blue,25),
+                                     lighten($color-blue,37),
+                                     lighten($color-blue,25),
+                                     ) ;
+    .items{
+        direction: rtl !important;
+        display: flex;
+        padding: 10px 45px;
+        
+        .item{
+            
+            .link{
+                display: block;
+                text-decoration: none;
+                margin: 20px;
+                font-size: 19px;
+                font-weight:550;
+                color:darken($color-deep-purple,15) ;
+                transition: ease-in-out .3s;
+                box-sizing: border-box;
+                text-shadow: 0 2px 2px rgb(194, 194, 194);
+                &:hover{
+                    
+                    color:lighten($color-blue,60);
+                    transform: scale(1.05);
+                    text-shadow: 0 2px 3px rgb(66, 66, 66);
+                }
+            }
+        }
+        @media only screen and (max-width:568px){
+            display: none;
+        }
+    }
+
+}
+

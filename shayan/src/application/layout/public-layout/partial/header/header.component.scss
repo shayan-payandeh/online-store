@@ -1,0 +1,32 @@
+@import '../../../../../assets/scss/utility/utility.scss';
+header{
+    text-align: center;
+    padding-top: 40px;
+    font-size: 20px;
+   
+    box-sizing: border-box;
+    height: 180px;
+    background-image: linear-gradient(to bottom ,
+                                      lighten($color-light-blue , 15),
+                                      lighten($color-indigo , 50),
+                                      lighten($color-light-blue , 15)
+                                      );
+    h1{
+         font-family: Georgia, 'Times New Roman', Times, serif !important;
+         position: relative;
+         animation-name: titleAnimation;
+         animation-fill-mode: forwards;
+         animation-duration: 2s;
+        //  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2o-leKeHcmRaJhyYqtfiZGNUOIBI0CQJEaPXtYLQVTI-TdxJr');
+        //  background-clip: text;
+        //  -webkit-background-clip: text;
+         color: rgb(0, 0, 97);
+         text-shadow:0px 1.5px 1px rgb(210, 234, 248);
+
+     
+        }
+    @keyframes titleAnimation {
+        0% {top : -100px; background-position: 50% 50%;}
+        100% {top : 0px; background-position: 50% 50%;}
+    }
+}

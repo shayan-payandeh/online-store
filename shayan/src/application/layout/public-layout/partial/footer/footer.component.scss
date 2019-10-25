@@ -1,0 +1,11 @@
+@import '../../../../../assets/scss/utility/utility.scss';
+
+footer {
+
+    height: 180px;
+    background-image: linear-gradient(to bottom ,
+                                      lighten($color-indigo , 25),
+                                      lighten($color-indigo , 2),
+                                      lighten($color-indigo , 25)
+                                      );
+}

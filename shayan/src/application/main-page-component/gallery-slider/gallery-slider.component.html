@@ -1,0 +1,34 @@
+<section class="gallery-slide">
+  <div class="mySlide fade">
+    <img src="../../../assets/image/car/gallery/car (11).jpg">
+    <div class="slideNumber">1/3</div>
+  </div>
+  <div class="mySlide fade">
+    <img src="../../../assets/image/car/gallery/car (5).jpg">
+    <div class="slideNumber">2/3</div>
+  </div>
+  <div class="mySlide fade">
+    <img src="../../../assets/image/car/gallery/car (8).jpg">
+    <div class="slideNumber">3/3</div>
+  </div>
+  <a class="previous" (click)="plusSlide(-1)">&#10094;</a>
+  <a class="next" (click)="plusSlide(1)">&#10095;</a>
+  <script>
+      var slideIndex = 1;
+    
+      showSlides(1);
+    
+      function plusSlide(n){showSlides(slideIndex += n);}
+    
+      function showSlides(n){
+        var slides = document.getElementsByClassName('mySlide');
+        if(n > slides.length){slideIndex = 1};
+        if(n < 1){slideIndex = slides.length};
+        for (let index = 0; index < slides.length; index++) {
+          slides[index].style.display = 'none';
+        }
+        slides[slideIndex - 1].style.display = 'block';
+      }
+    </script>
+</section>
+

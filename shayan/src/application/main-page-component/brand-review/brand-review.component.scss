@@ -1,0 +1,21 @@
+.container{
+    .wrapper{
+       
+        .link{
+            
+            .image{
+                // background-color: pink;
+                height: 220px;
+                width:180px;
+               
+                img{
+                    margin-top: 26px;
+                    height: 80%;
+                    width: 80%;
+                    filter: drop-shadow(7px 7px 2px rgb(126, 126, 126));
+                }
+            }
+            
+        }
+    }
+}

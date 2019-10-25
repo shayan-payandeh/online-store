@@ -1,0 +1,25 @@
+@import 'color.scss';
+
+%transition {
+    transition: ease .4s;
+}
+
+%radius{
+    border-radius: 5px;
+}
+
+%shadow {
+    box-shadow: rgba($color-dark, 0.5) 0 10px 5px;
+}
+
+[class ^= space]{
+    display: inline-block;
+}
+
+.space-5{
+    width: 5px;
+}
+
+.space-10{
+    width: 10px;
+}

@@ -1,0 +1,19 @@
+<div class="toggle">
+    <span class="bar-icon">&times;</span>
+</div>
+<section class="nav">
+    <ul class="items">
+        <li class="item" *ngFor = "let element of data">
+            <a class="link" [routerLink] = "[element.Url]">{{element.Title}}</a>
+        </li>
+    </ul>
+</section>
+<!-- <script>
+     $(document).ready( function(){
+         $('.bar-icon').click(function(){
+             $('.item').toggleClass('active')
+         })
+     })   
+</script> -->
+   
+

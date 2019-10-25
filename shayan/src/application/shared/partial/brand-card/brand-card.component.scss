@@ -1,0 +1,35 @@
+@import '../../../../assets/scss/utility/utility.scss';
+
+.brandCard{
+    height: 300px;
+    padding: 35px;
+    margin-top: 10px;
+    
+    .link{ 
+        text-align: center;
+        text-decoration: none;
+        
+        .image{
+            
+            img{
+                height: 300px;
+                width: 100%;
+                border-radius: 30px ;
+                @extend %shadow;
+            }
+        }
+
+        .title{
+            font-size: 18px;
+            margin-top: 15px;
+            color: black;
+            font-size: 19px;
+            text-shadow: rgba($color-dark,.5) 3px 4px 3px;
+            cursor: pointer;
+            transition: ease-in-out .3s;
+            &:hover{
+                transform:scale(1.05)
+            }
+        }
+    }
+}

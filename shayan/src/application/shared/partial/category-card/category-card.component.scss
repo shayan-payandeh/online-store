@@ -1,0 +1,43 @@
+@import "../../../../assets/scss/utility/utility.scss";
+.categoryCard{
+    margin: 80px ;
+     height: 300px;
+     display: flex;
+     background-color: transparent;
+     box-sizing: border-box;
+    .link{
+        text-align: center;
+        text-decoration: none;
+        .image{
+            box-sizing: border-box;
+            filter: contrast(.5);
+            transition: transform ease-in-out .4s;
+            img{
+                
+                height: 300px;
+                width: 100%;
+                border-radius: 5px;
+                @extend %shadow;
+            }
+            &:hover{
+                filter: contrast(1);
+                transform: scale(1.05);
+            }
+        }
+        .title{
+            margin-top: 30px;
+            color: lighten($color-dark,25);
+            font-weight: 800;
+            font-size: 18px;
+            border-radius: 2px;
+            background-image: linear-gradient(to left, 
+                                              lighten($color-dark,65),
+                                              lighten($color-dark,95)
+            );
+            transition: ease-in-out .4s;
+            &:hover{
+                transform: scale(.8);
+            }
+        }
+    }
+}
